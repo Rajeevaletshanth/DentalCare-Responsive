@@ -1,0 +1,4 @@
+{
+    "SERVER_URL" : "http://localhost:5000/api",
+    "STRIPE_PUBLIC" : "pk_test_51LI5HsCwlEWy2kFVlv5fjDKLslTJqDr3xgJzrb820JoDQ8epabrMnLwQfHp0Aca9LRphMnFcIJvavwijDtSu1Ecb00R9vc68hH"
+}
