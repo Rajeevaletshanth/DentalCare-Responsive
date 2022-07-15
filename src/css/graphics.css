@@ -1,0 +1,40 @@
+.logo-container{
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #d6d6d6;
+    box-shadow: 10px 10px #ececec;
+    /* width: 300px; */
+    /* height: 300px; */
+    /* width: 50%;
+    height: 50%;
+    min-width: 200px;
+    min-height: 200px; */
+}
+
+.logo-container:hover{
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(148, 148, 148);
+    box-shadow: 10px 10px rgb(148, 148, 148);
+    /* width: 300px; */
+    /* width: 50%;
+    height: 50%;
+    min-width: 200px;
+    min-height: 200px; */
+}
+
+.logo-container-active{
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid rgb(248, 29, 29);
+    box-shadow: 10px 10px rgb(248, 29, 29);
+    /* width: 300px;
+    height: 200px; */
+    /* width: 50%;
+    height: 50%;
+    min-width: 200px;
+    min-height: 200px; */
+}

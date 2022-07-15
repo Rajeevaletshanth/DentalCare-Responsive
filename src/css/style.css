@@ -1,0 +1,47 @@
+.btn {
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.edit-btn{
+    background-color: rgb(0, 134, 175);
+}
+
+.edit-btn:hover{
+    color: white;
+    background-color: rgb(0, 164, 214);
+}
+
+.delete-btn{
+    background-color: rgb(136, 0, 0);
+}
+
+.delete-btn:hover{
+    color: white;
+    background-color: rgb(179, 1, 1);
+}
+
+  .dropzone {
+    text-align: center;
+    padding: 20px;
+    border: 3px dashed #eeeeee;
+    background-color: #fafafa;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+  }
+  
+  .accept {
+    border-color: #107c10 !important;
+  }
+  
+  .reject {
+    border-color: #d83b01 !important;
+  }
