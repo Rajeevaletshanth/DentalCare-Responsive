@@ -2,5 +2,6 @@ export const ActionTypes = {
     SET_ADMIN : "SET_ADMIN",
     REMOVE_ADMIN : "REMOVE_ADMIN",
     SHOW_SIDEBAR : "SHOW_SIDEBAR",
-    HIDE_SIDEBAR : "HIDE_SIDEBAR"
+    HIDE_SIDEBAR : "HIDE_SIDEBAR",
+    SET_LANG : "SET_LANG"
 };

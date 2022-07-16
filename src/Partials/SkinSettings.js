@@ -1,14 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { US, IT, FR, DE } from 'country-flag-icons/react/3x2';
 import { useTranslation } from "react-i18next";
+import { useSelector, useDispatch, } from 'react-redux';
+import { setLang } from '../Redux/actions/languageAction';
+
 
 const SkinSettings = () => {
   const { t, i18n } = useTranslation();
-  const [region, setRegion] = useState("it");
+
+  const language = useSelector((state) => state.lang);
+  const [region, setRegion] = useState(language);
+
+  const dispatch = useDispatch()
+  
+ 
 
   useEffect(() => {
-    i18n.changeLanguage(region);
+    dispatch(setLang(region))
+    // i18n.changeLanguage(region);   
   },[region])
+
+  const handleLang = (e) => {
+    setRegion(e.target.id);
+    localStorage.setItem("lang", e.target.id);
+    i18n.changeLanguage(e.target.id); 
+  }
+
   return (
     <div class="theme-setting-wrapper" style={{cursor:"pointer"}}>
       <div id="settings-trigger">
@@ -19,16 +36,16 @@ const SkinSettings = () => {
 
         <p class="settings-heading">{t("SkinSetting.LANGUAGE")}</p>
         <div className="text-center">
-          <div class="btn btn-sm btn-light mr-4 mt-2" onClick={() => setRegion('it')}>
+          <div class="btn btn-sm btn-light mr-4 mt-2" id="it" onClick={handleLang}>
             <IT title="Italy" style={{width:"23px" , height:"19px", pointerEvents: "none"}}/> &nbsp; Italiano
           </div>
-          <div class="btn btn-sm btn-light mr-3 mt-2" onClick={() => setRegion('en')}>
+          <div class="btn btn-sm btn-light mr-3 mt-2" id="en" onClick={handleLang}>
             <US title="English" style={{width:"23px" , height:"19px", pointerEvents: "none"}}/> &nbsp; English
           </div>
-          <div class="btn btn-sm btn-light mr-3 mt-2  mb-2" onClick={() => setRegion('fr')}>
+          <div class="btn btn-sm btn-light mr-3 mt-2  mb-2" id="fr" onClick={handleLang}>
             <FR title="France" style={{width:"23px" , height:"19px", pointerEvents: "none"}}/> &nbsp; Francese
           </div>
-          <div class="btn btn-sm btn-light mr-3 mt-2 mb-2" onClick={() => setRegion('de')}>
+          <div class="btn btn-sm btn-light mr-3 mt-2 mb-2" id="de" onClick={handleLang}>
             <DE title="German" style={{width:"23px" , height:"19px", pointerEvents: "none"}}/> &nbsp; Tedesco
           </div>
         </div>

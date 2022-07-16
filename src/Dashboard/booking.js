@@ -360,8 +360,8 @@ const Booking = () => {
                     <button className='btn bg-orange btn-sm mt-2 mb-1'  onClick={refrshData} hidden={needRefresh? "" : "hidden"}>Refresh Table</button> 
                 </div> */} 
                 
-        <div className="card card-custom w-100">   
-        <div className="spinner-container mx-auto" style={{marginTop:"10%"}} hidden={spinnerHide}>
+        <div className="card bg-dark  w-100">   
+        <div className="spinner-container mx-auto pt-5 pb-5" hidden={spinnerHide}>
           <div className="row">
               <div class="spinner-grow  text-primary " role="status">
               <span class="sr-only">Loading...</span>
@@ -378,8 +378,8 @@ const Booking = () => {
                 <div class="timetable-img text-center">
                     <img src="img/content/timetable.png" alt="" />
                 </div>
-                <div class="table-responsive">
-                    <table class="table table-striped table-white text-center">
+                <div class="table-responsive mb-4">
+                    <table class="table table-dark text-center" style={{backgroundColor:"#282f3a"}}>
                         <thead>
                             <tr>
                                 <th class="text-uppercase"><h5><b>{t("booking.Time")}</b></h5></th>

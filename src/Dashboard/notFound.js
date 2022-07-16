@@ -1,6 +1,9 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
 const Notfound = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -12,18 +15,18 @@ const Notfound = () => {
                   <h1 class="display-1 mb-0">404</h1>
                 </div>
                 <div class="col-lg-6 error-page-divider text-lg-left pl-lg-4">
-                  <h2>SORRY!</h2>
-                  <h3 class="font-weight-light">The page you’re looking for was not found.</h3>
+                  <h2>{t("404.SORRY")}!</h2>
+                  <h3 class="font-weight-light">{t("404.The page you’re looking for was not found")}.</h3>
                 </div>
               </div>
               <div class="row mt-5">
                 <div class="col-12 text-center mt-xl-2">
-                  <a class="text-white font-weight-medium" href="/admin/dashboard">Back to home</a>
+                  <a class="text-white font-weight-medium" href="/admin/dashboard">{t("404.Back to home")}</a>
                 </div>
               </div>
               <div class="row mt-5">
                 <div class="col-12 mt-xl-2">
-                  <p class="text-white font-weight-medium text-center">Copyright &copy; 2021  All rights reserved.</p>
+                  <p class="text-white font-weight-medium text-center">{t("404.Copyrights")} © 2022 <a href="https://www.ltwtech.it/" class="text-white" target="_blank">LTW Tech</a>. {t("404.All rights reserved")}.</p>
                 </div>
               </div>
             </div>

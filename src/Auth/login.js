@@ -18,6 +18,8 @@ const Login = () => {
   const history = useHistory();
   const { t, i18n } = useTranslation();
 
+  const [region, setRegion] = useState("it");
+
   // const admin = useSelector((state) => state)
   // const dispatch = useDispatch()
 
@@ -26,8 +28,10 @@ const Login = () => {
     // if(localStorage.getItem('user-info')){
     //   history.push("/admin/home");
     // }
-    if(cookies['admin-info'] && localStorage.getItem('user-info'))
+    if(cookies['admin-info'] && localStorage.getItem('user-info')){
       history.push("/admin/dashboard");
+      window.location.reload();
+    }
   },[])
 
 
@@ -62,15 +66,15 @@ const Login = () => {
             //setCookie('admin-info', JSON.stringify(res.data[0]), { path: '/', maxAge: 3600 * 5 });
             setCookie('admin-info', JSON.stringify(res.data[0]), { path: '/' });
             localStorage.setItem("user-info",JSON.stringify(res.data[0]));
+            localStorage.setItem("lang", region);
             // dispatch(setAdmin(res.data[0]))
             history.push("/admin/dashboard");
+            window.location.reload();
           }else{
             toast.error("Wrong password or email!")
           }     
         })
   };
-
-  const [region, setRegion] = useState("it");
 
   useEffect(() => {
     i18n.changeLanguage(region);

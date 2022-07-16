@@ -243,7 +243,6 @@ const formatDate = (date) => {
 
   return (
     <div className="content-wrapper mx-auto" >
-      <div className="">
         <div className="spinner-container" style={{ textAlign: "center"}} hidden={spinnerHide}>
           <div className="row">
               <div class="spinner-grow  text-primary " role="status">
@@ -358,53 +357,6 @@ const formatDate = (date) => {
               </div>
             </div>
 
-            {/* <div className="col-md-6 grid-margin stretch-card">
-              <div className="card" style={{maxHeight: "600px", overflowY: "auto", paddingBottom: "15px", backgroundColor:"#F3797E"}}>
-                <div className="card-body"   >
-                 <div className="d-flex justify-content-between">
-                  <p className="card-title text-white">{t("dashboard.Today's Appointments")}</p>
-                  <a href="/admin/appointments" className="text-white">{t("dashboard.View all")}</a>
-                 </div>
-                  <span class="span text-white rounded border border-white mr-2" style={{ backgroundColor: "#7978E9", padding: "5px"}}>{t("dashboard.Active")}</span>
-                  <span class="span text-white rounded border border-white" style={{ backgroundColor: "#F3797E", padding: "5px"}}>{t("dashboard.Expired")}</span>
-                  <div className=" mt-3" style={{height:"340px", backgroundImage:"linear-gradient(#ffcccc, white)", overflowY: "scroll", overflowX: "hidden"}}>
-                  <div class="row ml-1 mt-4" >
-                  {booking_data.map((item, index) => {
-                    var upcoming = "#7978E9";
-                    var booked_patient = item.patient_id
-                    if(moment(today).format("YYYY-MM-DD") == formatDate(item.date)){
-                      if(moment(today).format("HH:mm") >= item.start_time){
-                        upcoming = "#F3797E"
-                      }
-                      eventCount++;
-                      // if(eventCount < 20){
-                        if(item.patient_id != "admin"){
-                          {users.map((usr) => {
-                            if(item.patient_id == usr.id){
-                              booked_patient = usr.firstname + " " + usr.surname;
-                            }
-                          })}
-                        }
-                        return(
-                          <a className="col-md-5 ml-4 mr-2 mb-1 text-white text-center " href="/admin/bookings" style={{backgroundColor: upcoming, cursor: "pointer"}}>                 
-                            <h6 className="text-center" style={{paddingTop : "7px"}}> {t("dashboard.Name")} : {capitalizeFirst(booked_patient)}</h6>
-                            <h5 className="text-center" >{t("header.time")} : {item.start_time} - {item.end_time}</h5>
-                          </a>                    
-                        )
-                      // }
-                    }                   
-                  })}
-                  {eventCount == 0?
-                    <a className="col ml-4 mr-5 mb-1 text-white text-center" href="/admin/bookings" style={{backgroundColor: "#4747A1", cursor: "pointer"}}>                 
-                    <h5 className="text-center" style={{padding : "7px"}}>{t("dashboard.No Appointments Today")}</h5>
-                    </a>  : ""
-                  }
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
             <div class="col-md-6 grid-margin stretch-card">
               <div class="card" style={{border:"1px solid #d4d4d4", maxHeight: "500px",  padding:"20px"}}>
                 <div class="card-body" style={{overflowY:"scroll"}}>
@@ -465,8 +417,8 @@ const formatDate = (date) => {
             <div class="progress-bar" role="progressbar" style={{width:layoutprogress, backgroundColor: "#7DA0FA"}} aria-valuenow={layoutprogress} aria-valuemin="0" aria-valuemax="100">{layoutprogress}</div>
           </div>
           </div>
-          </div>
         </div>
+
   );
 }
 

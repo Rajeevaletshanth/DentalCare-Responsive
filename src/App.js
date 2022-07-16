@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Root from './root';
 import Notfound from './Dashboard/notFound';
-import { useTranslation } from "react-i18next";
 import configData from './config.json';
 
 import Login from './Auth/login'
@@ -19,35 +18,25 @@ const App = () => {
   axios.defaults.withCredentials = true;
 
   const [cookies, setCookie, removeCookie] = useCookies(['admin-info']);
-  // const admin_id = cookies["admin-info"].id;
+  const [admin_id, setAdminId] = useState();
 
-  useEffect( async() => {
-     await axios.get(`${configData.SERVER_URL}/admin/login`).then((response) => {
+  useEffect(() => {
+    getLogin();
+    if(cookies["admin-info"]) {
+      setAdminId(cookies["admin-info"].id);
+    }
+  },[]);
+  
+
+  const getLogin = async() => {
+    await axios.get(`${configData.SERVER_URL}/admin/login`).then((response) => {
       if(response.data.loggedIn == true){
         const username = response.data.user[0].username;       
         setUser(username);
         setAuth(true);        
-      } 
-      if(cookies["admin-info"]) {
-        const admin_id = cookies["admin-info"].id;
-        // getLang(admin_id); 
-      }
-        
+      }  
     })
-  },[]);
-
-  // const { t, i18n } = useTranslation();
-  // const handleLang = (lang) => {
-  //     i18n.changeLanguage(lang);
-  // }
-
-  // const getLang = async(admin_id) => {
-  //   await axios.get(`${configData.SERVER_URL}/admin/settings/get/${admin_id}`).then((res) => {
-  //       if(res.data.length > 0){
-  //           handleLang(res.data[0].language);
-  //       }
-  //   })
-  // }
+  }
 
   return (
   <Router>

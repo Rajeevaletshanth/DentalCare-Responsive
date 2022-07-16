@@ -306,5 +306,21 @@
         "HEADER" : "HEADER",
         "Light" : "Light",
         "Dark" : "Dark"
+    },
+    "404":{
+        "Copyrights" : "Copyrights",
+        "All rights reserved" : "All rights reserved",
+        "Developed by LTW TECH" : "Developed by LTW TECH",
+        "SORRY": "SORRY",
+        "The page you’re looking for was not found" : "The page you’re looking for was not found",
+        "Back to home" : "Back to home"
+    },
+    "search" : {
+        "Dashboard" : "Dashboard",
+        "Schedule" : "Schedule",
+        "Layout" : {
+            "Layout": "Layout",
+            "Home": "Home"
+        }
     }
 }

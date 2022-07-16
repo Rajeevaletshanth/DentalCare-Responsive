@@ -307,5 +307,17 @@
         "HEADER" : "INTESTAZIONE",
         "Light" : "Luce",
         "Dark" : "Scuro"
+    },
+    "404":{
+        "Copyrights" : "Copyrights",
+        "All rights reserved" : "Tutti i diritti sono riservati",
+        "Developed by LTW TECH" : "Realizzato da LTW TECH",
+        "SORRY": "SPIACENTE",
+        "The page you’re looking for was not found" : "La pagina che stai cercando non è stata trovata",
+        "Back to home" : "Tornare a casa"
+    },
+    "search" : {
+        "Dashboard" : "Dashboard",
+        "Schedule" : "Schedule"
     }
 }
