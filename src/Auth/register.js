@@ -62,13 +62,8 @@ const Register = () => {
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
               <div className="auth-form-light text-left py-5 px-4 px-sm-5">
-                <img
-                  src="../../images/dental-care.png"
-                  alt="logo"
-                  width={400}
-                  height={225}
-                />
-                <h4>New here?</h4>
+                <img src="../../images/ltw-full.svg" alt="logo" width="60%" height="60%"/>
+                <h4 class="mt-4">New here?</h4>
                 <h6 className="font-weight-light">
                   Signing up is easy. It only takes a few steps
                 </h6>
@@ -106,7 +101,7 @@ const Register = () => {
                   <div className="mt-3">
                     <a
                       className="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"
-                      href="../../index.html"
+                      href="/admin/login"
                       onClick={handleAPI}
                     >
                       SIGN UP
@@ -114,7 +109,7 @@ const Register = () => {
                   </div>
                   <div className="text-center mt-4 font-weight-light">
                     Already have an account?{" "}
-                    <a href="login.html" className="text-primary">
+                    <a href="/admin/login" className="text-primary">
                       Login
                     </a>
                   </div>

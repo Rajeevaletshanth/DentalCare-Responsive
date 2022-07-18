@@ -243,7 +243,8 @@ const formatDate = (date) => {
 
   return (
     <div className="content-wrapper mx-auto" >
-        <div className="spinner-container" style={{ textAlign: "center"}} hidden={spinnerHide}>
+      <div className="card"  hidden={spinnerHide}>
+        <div className="spinner-container  mx-auto  pt-5 pb-5">
           <div className="row">
               <div class="spinner-grow  text-primary " role="status">
               <span class="sr-only">Loading...</span>
@@ -256,6 +257,7 @@ const formatDate = (date) => {
             </div>
           </div>
         </div>
+      </div>
       <div classname="content-container" hidden={contentHide}>
           <div className="row">
             <div className="col-md-12 grid-margin">
@@ -358,8 +360,8 @@ const formatDate = (date) => {
             </div>
 
             <div class="col-md-6 grid-margin stretch-card">
-              <div class="card" style={{border:"1px solid #d4d4d4", maxHeight: "500px",  padding:"20px"}}>
-                <div class="card-body" style={{overflowY:"scroll"}}>
+              <div class="card" style={{maxHeight: "500px",  padding:"10px"}}>
+                <div class="card-body" style={{overflowY:"auto"}}>
                   <p class="card-title mb-4">{t("dashboard.Today's Appointments")}</p>
                   <div class="table-responsive">
                     <table class="table table-striped table-borderless">

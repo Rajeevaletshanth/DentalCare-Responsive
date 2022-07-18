@@ -77,8 +77,8 @@ const Sidebar = () => {
                         <div class="collapse" id="ui-basic">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> <a class="nav-link" href="/admin/layouts/home">{t("sidebar.menu.Layout.Home")}</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="/admin/layouts/team">{t("sidebar.menu.Layout.About Us")}</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="/admin/layouts/aboutus">{t("sidebar.menu.Layout.Team")}</a></li>                               
+                                <li class="nav-item"> <a class="nav-link" href="/admin/layouts/aboutus">{t("sidebar.menu.Layout.About Us")}</a></li> 
+                                <li class="nav-item"> <a class="nav-link" href="/admin/layouts/team">{t("sidebar.menu.Layout.Team")}</a></li>                                                             
                                 <li class="nav-item"> <a class="nav-link" href="/admin/layouts/services">{t("sidebar.menu.Layout.Services")}</a></li>
                                 <li class="nav-item"> <a class="nav-link" href="/admin/layouts/contact">{t("sidebar.menu.Layout.Contact")}</a></li>
                                 {/* <li class="nav-item"> <a class="nav-link" href="/admin/layouts/extra">{t("sidebar.menu.Layout.Extra")}</a></li> */}

@@ -114,7 +114,7 @@ const Appointment = () => {
     <div class="content-wrapper">
       <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
-              <div class="card card-custom"  style={{maxHeight:"800px", padding:"20px"}}>
+              <div class="card"  style={{maxHeight:"800px", padding:"20px"}}>
                 <div class="card-body" style={{overflowY:"scroll"}}>
                   <p class="card-title">{t("appointment.Appointments")}</p>
                   <div class="row">

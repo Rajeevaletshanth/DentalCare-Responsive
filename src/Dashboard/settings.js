@@ -132,7 +132,7 @@ const Settings = () => {
     <div class="content-wrapper">
       <div class="row">
         <div class="col-12 grid-margin stretch-card">
-          <div class="card card-custom">
+          <div class="card">
             <div class="card-body">
             <Toaster />
               <h4 class="card-title">{t("settings.Settings")}</h4>

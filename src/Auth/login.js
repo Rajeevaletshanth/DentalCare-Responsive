@@ -88,9 +88,9 @@ const Login = () => {
           <div className="row w-100 mx-0">
             <div className="col-lg-4 mx-auto">
               <div className="auth-form-light text-left py-5 px-4 px-sm-5">
-                  <img src="../../images/dental-care.png" alt="logo" width="80%" height="80%"/>
+                  <img src="../../images/ltw-full.svg" alt="logo" width="60%" height="60%"/>
 
-                <div class="row">
+                <div class="row mt-4">
                   <div class="col-sm-8">
                     <h4>{t("login.welcome_msg")}</h4>
                   </div>
@@ -154,7 +154,7 @@ const Login = () => {
                       </label>
                     </div>
                     <a href="#" className="auth-link text-black">
-                    {t("login.Forgot Password")}
+                      {t("login.Forgot Password")}
                     </a>
                   </div>
                   {/* <div className="mb-2">

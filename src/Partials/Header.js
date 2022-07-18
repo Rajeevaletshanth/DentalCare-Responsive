@@ -100,7 +100,7 @@ const [notifications, setNotifications] = useState(0);
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown">
             
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" style={{cursor:"pointer"}}>
               <i class="icon-bell mx-0"></i>
               {notifications > 0 ? <span class="count"></span> : ""}              
             </a>
@@ -155,7 +155,7 @@ const [notifications, setNotifications] = useState(0);
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">             
               <div className="form-inline">
-                <img src="../../images/faces/profile.png" alt="profile"/>
+                <img src="../../images/faces/admin-prof.svg" alt="profile" />
                 <h5 className='ml-1 mt-2'>{capitalizeFirst(username)}</h5>
               </div>
             </a>

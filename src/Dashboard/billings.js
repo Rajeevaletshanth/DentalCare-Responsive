@@ -91,7 +91,7 @@ const Billings = () => {
 
   return (
     <div className="content-wrapper">
-    <div className="card card-custom" style={{padding :"40px"}}>
+    <div className="card" style={{padding :"40px"}}>
     <Toaster />
     <h5 class="mt-2"><strong>{t("Billings.title")}</strong></h5> <br></br>
         <div class="col">

@@ -317,7 +317,30 @@
         "Back to home" : "Tornare a casa"
     },
     "search" : {
-        "Dashboard" : "Dashboard",
-        "Schedule" : "Schedule"
+        "Dashboard" : "Pannello di Controllo",
+        "Schedule" : "Orario",
+        "Patient" : "Paziente",
+        "Appointment" : "Appuntamento",
+        "Booking" : "Prenotazione",
+        "Billings" : "Fatture",
+        "Settings" : "Impostazioni",
+        "Layout" : {
+            "Layout" : "Disposizione",
+            "Home" : "Home",
+            "About Us" : "Su di Noi",
+            "Team" : "Team",
+            "Services" : "Servizi",
+            "Contact" : "Contatto",
+            "Extra" : "Extra" ,
+            "General" : "Generale"
+        },
+        "Graphics" : {
+            "Graphics": "Grafica",
+            "Logo Designs" : "Disegni del logo",
+            "Visiting Cards" : "Biglietti da visita",
+            "A3 Flyers" : "A3 Volantini",
+            "A4 Flyers" : "A4 Volantini"
+        },
+        "Help" : "Aiuto"
     }
 }

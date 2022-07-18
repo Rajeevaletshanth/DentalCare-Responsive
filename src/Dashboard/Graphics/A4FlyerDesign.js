@@ -116,7 +116,7 @@ const A4FlyerDesign = () => {
     <div class="row">
       {/* <h3 class="mt-3 ml-4">{t("Graphics.A4 Flyers")}</h3> */}
       <div class="col-12 grid-margin stretch-card">
-        <div class="card card-custom">
+        <div class="card">
         
 
       <div className='ml-4 mt-4 mr-4'>

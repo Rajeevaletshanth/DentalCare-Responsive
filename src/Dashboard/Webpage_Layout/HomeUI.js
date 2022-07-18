@@ -240,7 +240,7 @@ const HomeUI = () => {
     <div class="row">
       {/* <h3 class="mt-3 ml-4">{t("Layout.Home Layout")}</h3> */}
       <div class="col-12 grid-margin stretch-card">
-        <div class="card card-custom">
+        <div class="card">
         {/* <h4 class="card-title mt-5 ml-5">{t("Layout.Choose Theme")} :</h4> */}
         <h4 class="card-title ml-4 mt-4 mr-4">{t("Layout.Home Layout")}</h4>
         <div class="row row-cols-1 row-cols-md-2 g-4 ml-4 mt-2 mr-4" >

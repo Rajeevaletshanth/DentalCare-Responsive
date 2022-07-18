@@ -318,9 +318,28 @@
     "search" : {
         "Dashboard" : "Dashboard",
         "Schedule" : "Schedule",
+        "Patient" : "Patient",
+        "Appointment" : "Appointment",
+        "Booking" : "Booking",
+        "Billings" : "Billings",
+        "Settings" : "Settings",
         "Layout" : {
             "Layout": "Layout",
-            "Home": "Home"
-        }
+            "Home": "Home",
+            "About Us" : "About Us",
+            "Team" : "Team",
+            "Services" : "Services",
+            "Contact" : "Contact",
+            "Extra" : "Extra",
+            "General" : "General"
+        },
+        "Graphics" : {
+            "Graphics": "Graphics",
+            "Logo Designs" : "Logo Designs",
+            "Visiting Cards" : "Visiting Cards",
+            "A3 Flyers" : "A3 Flyers",
+            "A4 Flyers" : "A4 Flyers"
+        },
+        "Help" : "Help"
     }
 }
